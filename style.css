@@ -1042,12 +1042,32 @@ a {
 }
 
 @media screen and (max-width: 420px) {
+
+    .nav_logo{
+        letter-spacing: 1px;
+        display: inline-flex;
+        align-items: center;
+        column-gap: .25rem;
+        margin-right: 15px;
+        color: #161637;
+        font-weight: 800;
+        font-size: 21px;
+    }
+    
+    .nav_logo-icon{
+        font-size: 1.5rem;
+        background-color: #2c2c9c;
+        color: #fff;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
     .nav {
         height: 5.8rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        column-gap: .25rem;
+        column-gap: 1rem;
     }
 
     .contact_us a{
