@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    min-width: 100%;
+    color: black;
+    display: flex;
+    background-color: white;
+    min-height: 100vh;
+
+    align-items: center;
+    justify-content: space-around;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./pexels-alex-andrews-821754.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.online .sub-body a:hover{
+    color: #4242c8;
+}
+
+input{
+    border: none;
+    font-size: 1.1rem;
+    padding: .5rem;
+    display: block;
+    margin: 1rem;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+input:focus{
+    outline: none;
+    border-color: #4242c8;
+}
+
+input:visited{
+    outline: none;
+}
+
+.rs, .ls{
+    padding: 5% 0rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start ;
+    justify-content: space-around;
+}
+
+form button{
+    align-self: center;
+    padding: .6rem;
+    position: relative;
+    float: right;
+    margin-right: 1rem;
+    background-color: #4242c8;
+    color: whitesmoke;
+    border: none;
+}
+
+.form-title{
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.locs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* width: 100%; */
+    text-align: center;
+    /* background-color: aqua; */
+    gap: 2rem;
+}
+
+.con-head{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.form{
+    background-color: whitesmoke   ;
+    color: black;
+    padding: 10%;
+    z-index: 3;
+    box-shadow: 0px 0px 20px 2px gray;
+}
+
+.creds{
+    color: #4242c8;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+    
+}
+
+.creds .logos i:hover{
+    transform: scale(1.3);
+}
+
+.map-btn{
+    background-color: #4242c8;
+    padding: 1rem;
+}
+
+.logos i{
+    margin: 1rem;
+}
+
+.sub-head{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.sub-body{
+    line-height: 1.4rem;
+}
+
+.sub-body a{
+    color: currentColor;
+}
+
+
+.one h1 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700; color:#202020;
+    text-transform: uppercase;
+    word-spacing: 1px; letter-spacing:2px;
+    border-bottom: 2px solid #202020;
+}
+
+.map button{
+    padding: .4rem;
+    font-size: 1rem;
+    background-color: #4242c8;
+    color: aliceblue;
+    margin-top: 1rem;
+    border: none;
+}
+
+button{
+    transition: all 400ms ease-in-out;
+    font-family:'Josefin Sans', sans-serif ;
+}
+
+button:hover{
+    transform: translateY(-.5rem);
+}
+
+@media screen and (max-width:700px) {
+    main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .ls{
+        background-color: #36454f;
+        color: aliceblue;
+    }
+    .ls, .rs{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    .one{
+        color: aliceblue;
+    }
+    .locs{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .creds{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    form button{
+        margin-right: 0;
+        background-color: whitesmoke;
+        color: #36454f;
+    }
+    input{
+        color: whitesmoke;
+    }
+    .form{
+        background-color: #36454f;
+        color: whitesmoke   ;
+    }
+    .creds{
+        color: #36454f;
+    }
+
+    .con-head{
+        color: aliceblue;
+    }
+    .logos{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
+    .logos i{
+        text-align: center;
+    }
+    .con-head{
+        font-size: 4rem;
+
+    }
+
+    .one h1{
+        font-weight: 700;
+        color:aliceblue;
+        border-bottom: 2px solid aliceblue;
+    }
+
+    .map button{
+        background-color: aliceblue;
+        color: black;
+    }
+
+}
