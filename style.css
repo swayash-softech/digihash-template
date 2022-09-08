@@ -836,6 +836,7 @@ a {
 
     .contact_us a{
         font-size: 10px;
+        display: none;
     }
 
     .burger div{
@@ -1078,6 +1079,7 @@ a {
         font-size: 10px;
         line-height: 1.5;
         transition: .3s;
+        display: none;
     }
 }
 
